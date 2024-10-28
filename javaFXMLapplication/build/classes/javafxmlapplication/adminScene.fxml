@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="411.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.AdminSceneController">
+   <children>
+      <Label layoutX="63.0" layoutY="7.0" prefHeight="59.0" prefWidth="466.0" text="        Tax Office Admin Page" textFill="#8d6514">
+         <font>
+            <Font name="System Bold Italic" size="26.0" />
+         </font>
+      </Label>
+  <AnchorPane layoutX="-12.0" layoutY="-173.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      <Button fx:id="logOutButton" layoutX="125.0" layoutY="275.0" mnemonicParsing="false" onAction="#logOutButtonActionHandler" prefHeight="47.0" prefWidth="279.0" text="log out" textFill="#8d6514">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="registerClient" layoutX="24.0" layoutY="94.0" mnemonicParsing="false" onAction="#registerActionHandler" prefHeight="33.0" prefWidth="207.0" text="register client" textFill="#8d6514">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="RquestBtn" layoutX="284.0" layoutY="94.0" mnemonicParsing="false" onAction="#RquestBtnActionHandler" prefHeight="40.0" prefWidth="207.0" text="Requests " textFill="#8d6514">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="Tax_Amount" layoutX="24.0" layoutY="195.0" mnemonicParsing="false" onAction="#Tax_AmountActionHandler" prefHeight="38.0" prefWidth="207.0" text="Set Tax" textFill="#8d6514">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="ViewBtn" layoutX="279.0" layoutY="195.0" mnemonicParsing="false" onAction="#ViewBtnActionHandler" prefHeight="38.0" prefWidth="207.0" text="view" textFill="#8d6514">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

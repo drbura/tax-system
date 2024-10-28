@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+
+<AnchorPane id="AnchorPane" prefHeight="739.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.UserPageController">
+    <children>
+        <Label layoutX="314.0" layoutY="60.0" prefHeight="53.0" prefWidth="227.0" text="User page" textFill="#8d6514">
+            <font>
+                <Font name="System Bold Italic" size="36.0" />
+            </font>
+        </Label>
+       <TabPane fx:id="tabPane" layoutX="84.0" layoutY="169.0" prefHeight="530.0" prefWidth="485.0" tabClosingPolicy="UNAVAILABLE">   
+
+            <tabs>
+                <Tab text="Tax Amount">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="214.0" prefWidth="435.0">
+                            <children>
+                                <Label layoutX="77.0" layoutY="30.0" text="Tin Number">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="87.0" layoutY="104.0" text="Password">
+                                    <font>
+                                        <Font name="System Bold" size="19.0" />
+                                    </font>
+                                </Label>
+                                <PasswordField fx:id="password" layoutX="86.0" layoutY="152.0" prefHeight="31.0" prefWidth="287.0" />
+                                <TextField fx:id="Tin_Number" layoutX="84.0" layoutY="66.0" prefHeight="31.0" prefWidth="292.0" />
+
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Request Approval">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="255.0" prefWidth="435.0">
+                            <children>
+                                <Label layoutX="37.0" layoutY="40.0" text="Tin Number">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="37.0" layoutY="82.0" prefHeight="26.0" prefWidth="83.0" text="First Name">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="tinNumber" layoutX="150.0" layoutY="37.0" prefHeight="31.0" prefWidth="307.0" />
+                                <Label layoutX="30.0" layoutY="129.0" prefHeight="26.0" prefWidth="97.0" text="Last Name">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" /></font></Label>
+                                <ImageView fx:id="IMG_url" fitHeight="200.0" fitWidth="200.0" layoutX="182.0" layoutY="219.0" />
+                        <Label layoutX="30.0" layoutY="177.0" prefHeight="26.0" prefWidth="97.0" text="phone">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                                <Button fx:id="sendButton" layoutX="36.0" layoutY="329.0" mnemonicParsing="false" onAction="#sendButtonActionHandler" prefHeight="43.0" prefWidth="105.0" text="Send">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="bankRecipt" layoutX="30.0" layoutY="238.0" mnemonicParsing="false" onAction="#bankReciptActionHandler" text="Bank Recipt">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font></Button>
+                        <TextField fx:id="lastName" layoutX="154.0" layoutY="126.0" prefHeight="31.0" prefWidth="303.0" />
+                        <TextField fx:id="PHONE" layoutX="155.0" layoutY="174.0" prefHeight="31.0" prefWidth="303.0" />
+                        <TextField fx:id="firstName" layoutX="152.0" layoutY="79.0" prefHeight="31.0" prefWidth="304.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Info">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="63.0" layoutY="40.0" text="Tin Number">
+                                    <font>
+                                        <Font size="17.0" />
+                                    </font>
+                                </Label>
+                                <TextField fx:id="tinNumberField" layoutX="63.0" layoutY="70.0" prefHeight="31.0" prefWidth="335.0" />
+                                <Button fx:id="statusButton" layoutX="63.0" layoutY="120.0" mnemonicParsing="false" onAction="#statusActionHandler" prefHeight="31.0" prefWidth="335.0" text="View Status">
+                                    <font>
+                                        <Font name="System Bold" size="24.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <Button fx:id="logout" layoutX="622.0" layoutY="441.0" mnemonicParsing="false" onAction="#logOutActionHandler" prefHeight="40.0" prefWidth="167.0" text="Log Out" textFill="#8d6514">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
